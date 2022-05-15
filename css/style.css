@@ -246,30 +246,10 @@ a {
   justify-content: space-between;
 }
 
-.benefits-item::before {
-  content: "";
-  display: block;
-  min-height: 120px;
+.benefits-card {
+  padding: 25px 100px;
   background-color: var(--team-section-color);
-  background-repeat: no-repeat;
-  background-position: center;
-
-  margin-bottom: 30px;
-}
-
-.antenna::before {
-  background-image: url(../images/SVG/antenna.svg);
-}
-
-.clock::before {
-  background-image: url(../images/SVG/clock.svg);
-}
-.diagram::before {
-  background-image: url(../images/SVG/diagram.svg);
-}
-
-.astronaut::before {
-  background-image: url(../images/SVG/astronaut.svg);
+  margin-bottom: 33px;
 }
 
 /* Чем мы занимаемся */
@@ -392,6 +372,25 @@ a {
 .clients-list-link {
   display: inline-block;
   padding: 16px 32px;
+  color: #afb1b8;
+}
+
+.clients-list-link:hover {
+  color: var(--blue);
+}
+
+.clients-list-item:hover {
+  border: 1px solid var(--blue);
+  border-radius: var(--clients-border-radius);
+}
+
+.client-one,
+.client-two,
+.client-three,
+.client-four,
+.client-five,
+.client-six {
+  fill: currentColor;
 }
 
 /* Футер */
